@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","inverse-primary":"#c3c0ff","surface-container-highest":"#d3e4fe","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","primary-container":"#4f46e5","primary-fixed":"#e2dfff","on-tertiary-fixed-variant":"#004e5c","surface-bright":"#f8f9ff","tertiary-fixed-dim":"#4cd7f6","on-tertiary":"#ffffff","on-secondary-fixed":"#25005a","error":"#ba1a1a","surface":"#f8f9ff","outline":"#777587","on-background":"#0b1c30","tertiary-fixed":"#acedff","on-tertiary-container":"#93e8ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","secondary-container":"#8a4cfc","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container":"#e5eeff","background":"#f8f9ff","surface-tint":"#4d44e3","on-error":"#ffffff","tertiary-container":"#006a7c","on-primary-container":"#dad7ff","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","tertiary":"#00505f","secondary-fixed-dim":"#d2bbff","primary":"#3525cd","on-surface-variant":"#464555","on-secondary-container":"#fffbff","on-surface":"#0b1c30","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-primary-fixed-variant":"#3323cc","secondary":"#712ae2","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-fixed":"#eaddff","on-secondary-fixed-variant":"#5a00c6","primary-fixed-dim":"#c3c0ff","on-tertiary-fixed":"#001f26"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1.5rem","margin-sm":"1rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight tracking-tight">AgentHub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">ADMIN SAAS</span></div></div><span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm font-semibold bg-surface-container-high text-primary">Demo Local</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Usuarios</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agentes" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md text-body-md">Agentes</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">extension</span><span class="font-body-md text-body-md">Skills</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contrataciones" href="#"><span class="material-symbols-outlined text-[20px]">handshake</span><span class="font-body-md text-body-md">Contrataciones</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 transition-colors bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="log-de-errores" href="#"><span class="material-symbols-outlined text-[20px]">bug_report</span><span class="font-body-md text-body-md">Log de errores</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low flex items-center gap-3 shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Admin Operativo</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">admin@agenthub.io</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide uppercase">Panel de Control y Orquestación</span></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" title="Alternar Tema" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-gutter bg-surface flex-1"><div class="flex flex-col w-full pb-16">
+<!-- Top Header Profile Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-error-container text-on-error-container uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+          Live Stream
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cluster: eu-central-1 :: node-ai-prod</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Log de errores</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Monitoreo de excepciones en tiempo real, análisis de trazas de ejecución e incidentes de agentes IA.
+      </p>
+</div>
+<!-- Actions & Secondary Filter -->
+<div class="flex items-center gap-3">
+<div class="relative inline-block">
+<button class="inline-flex items-center gap-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2 rounded-lg shadow-sm hover:bg-surface-container transition-all" id="agentFilterBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_alt</span>
+<span>Filtrar por agente</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-2 bg-primary text-on-primary font-body-md text-body-md font-medium px-4 py-2 rounded-lg shadow-sm hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exportar log</span>
+</button>
+</div>
+</div>
+<!-- Incident KPI Cards Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<!-- Card Total -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-high rounded-full opacity-40 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between z-10 mb-3">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Total Incidentes</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 z-10">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Últimas 24h</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden z-10">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Card Críticos -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-error-container rounded-full opacity-40 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between z-10 mb-3">
+<span class="font-label-md text-label-md uppercase tracking-wider text-error font-medium">Críticos</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 z-10">
+<span class="font-headline-xl text-headline-xl font-bold text-error">1</span>
+<span class="font-label-sm text-label-sm text-on-error-container font-medium px-2 py-0.5 rounded-full bg-error-container">16.6% del total</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden z-10">
+<div class="bg-error h-full rounded-full" style="width: 16.6%;"></div>
+</div>
+</div>
+<!-- Card Advertencias -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-highest rounded-full opacity-50 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between z-10 mb-3">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Advertencias</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 z-10">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Límites y sockets</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden z-10">
+<div class="bg-secondary-container h-full rounded-full" style="width: 33.3%;"></div>
+</div>
+</div>
+<!-- Card Resueltos -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-low rounded-full opacity-60 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between z-10 mb-3">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary font-medium">Resueltos</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 z-10">
+<span class="font-headline-xl text-headline-xl font-bold text-tertiary">3</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium px-2 py-0.5 rounded-full bg-surface-container-highest">50% recuperado</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden z-10">
+<div class="bg-tertiary h-full rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<!-- Realtime Trend Graphic Preview Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm mb-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">troubleshoot</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Tasa de degradación del runtime</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">99.82% de disponibilidad del orquestador en 7 días móviles</span>
+</div>
+</div>
+<!-- Inline Mini Sparkline Graphic -->
+<div class="flex items-center gap-6 w-full md:w-auto justify-end">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pico de latencia</span>
+<span class="font-label-md text-label-md font-bold text-error">30.005 ms</span>
+</div>
+<svg class="w-48 h-10 overflow-visible text-primary" fill="none" viewbox="0 0 160 36">
+<path d="M0 30 L25 28 L50 32 L75 22 L100 29 L125 4 L140 18 L160 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle class="fill-error" cx="125" cy="4" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Logs Table Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-visible">
+<!-- Table Header Controls -->
+<div class="p-4 sm:p-5 flex flex-wrap items-center justify-between gap-4 bg-surface-container-low/50">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Auditoría de Excepciones</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant">6 registros</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<input class="w-64 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-3 py-1.5 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Buscar por ticket, agente o error..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-on-surface-variant">search</span>
+</div>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 font-semibold">Timestamp</th>
+<th class="py-3.5 px-4 font-semibold">Agente</th>
+<th class="py-3.5 px-4 font-semibold">Excepción / Evento</th>
+<th class="py-3.5 px-4 font-semibold">Severidad</th>
+<th class="py-3.5 px-4 font-semibold">Mensaje Contextual</th>
+<th class="py-3.5 px-4 font-semibold">Estado</th>
+<th class="py-3.5 px-4 font-semibold text-right">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm text-on-surface font-body-sm">
+<!-- Row 1: SupportBot (CRÍTICO) with Dropdown OPEN -->
+<tr class="bg-surface-container-highest/30 hover:bg-surface-container transition-colors relative">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-20 <span class="text-on-surface-variant font-normal">09:42:15</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center text-[12px] font-bold">SB</div>
+<span class="font-medium text-on-surface">SupportBot</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Error de Timeout
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-bold bg-error text-on-error">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                CRÍTICO
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Fallo de respuesta tras 30.000ms al procesar ticket #9921">
+              Fallo de respuesta tras 30.000ms al procesar ticket #9921
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Pendiente
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-highest inline-flex items-center justify-center text-on-surface transition-colors" id="rowActionBtn1" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<!-- DROPDOWN ABIERTO (Requerimiento visual explícito) -->
+<div class="absolute right-4 top-12 z-30 w-48 bg-surface-container-lowest rounded-xl shadow-xl py-1 text-left" id="dropdownMenu1">
+<a class="flex items-center gap-2.5 px-4 py-2.5 font-body-sm text-body-sm text-on-surface hover:bg-surface-container transition-colors" href="#openModal" onclick="document.getElementById('incidentModal').classList.remove('hidden');">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+<span>Ver detalle</span>
+</a>
+<button class="w-full flex items-center gap-2.5 px-4 py-2.5 font-body-sm text-body-sm text-tertiary hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Marcar como resuelto</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: CustomerAgent (ADVERTENCIA - Resuelto) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-20 <span class="text-on-surface-variant font-normal">08:15:02</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center text-[12px] font-bold">CA</div>
+<span class="font-medium text-on-surface">CustomerAgent</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Cuota Excedida
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-highest text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                ADVERTENCIA
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Límite de tokens por minuto superado temporalmente en API CRM">
+              Límite de tokens por minuto superado temporalmente en API CRM
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">done</span>
+                Resuelto
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container inline-flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: SalesCopilot (MEDIA - Resuelto) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-19 <span class="text-on-surface-variant font-normal">22:30:44</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-tertiary-container text-on-tertiary flex items-center justify-center text-[12px] font-bold">SC</div>
+<span class="font-medium text-on-surface">SalesCopilot</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Error de Parseo
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-primary-container text-on-primary">
+                MEDIA
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Formato de respuesta JSON inválido en prompt estructurado">
+              Formato de respuesta JSON inválido en prompt estructurado
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">done</span>
+                Resuelto
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container inline-flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: DataAnalyst (ADVERTENCIA - Resuelto) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-19 <span class="text-on-surface-variant font-normal">18:04:19</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-surface-container-highest text-on-surface flex items-center justify-center text-[12px] font-bold">DA</div>
+<span class="font-medium text-on-surface">DataAnalyst</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Conexión Rechazada
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container-highest text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                ADVERTENCIA
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Reintento de conexión a Data Warehouse fallido en socket #4">
+              Reintento de conexión a Data Warehouse fallido en socket #4
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">done</span>
+                Resuelto
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container inline-flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: SupportBot (ALTA - Pendiente) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-19 <span class="text-on-surface-variant font-normal">14:12:30</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-container text-on-primary flex items-center justify-center text-[12px] font-bold">SB</div>
+<span class="font-medium text-on-surface">SupportBot</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Dependencia no disponible
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-bold bg-error-container text-on-error-container">
+                ALTA
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Servicio externo de webhook no respondió código 200">
+              Servicio externo de webhook no respondió código 200
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Pendiente
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container inline-flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: CustomerAgent (BAJA - Pendiente) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-label-sm text-label-sm text-on-surface whitespace-nowrap">
+              2026-11-19 <span class="text-on-surface-variant font-normal">11:05:55</span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center text-[12px] font-bold">CA</div>
+<span class="font-medium text-on-surface">CustomerAgent</span>
+</div>
+</td>
+<td class="py-4 px-4 font-medium text-on-surface whitespace-nowrap">
+              Validación de Esquema
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-surface-container text-on-surface-variant">
+                BAJA
+              </span>
+</td>
+<td class="py-4 px-4 max-w-xs xl:max-w-md truncate text-on-surface-variant" title="Faltan campos opcionales en payload de cliente">
+              Faltan campos opcionales en payload de cliente
+            </td>
+<td class="py-4 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Pendiente
+              </span>
+</td>
+<td class="py-4 px-4 text-right whitespace-nowrap">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container inline-flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-4 sm:p-5 flex items-center justify-between bg-surface-container-low/40">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mostrando 1 a 6 de 6 incidentes</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant opacity-40 font-body-sm text-body-sm" disabled="" type="button">Anterior</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-medium" type="button">1</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant opacity-40 font-body-sm text-body-sm" disabled="" type="button">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- MODAL DE REFERENCIA ABIERTO (Sección 3 de los specs) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/60 backdrop-blur-sm transition-opacity" id="incidentModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-6 py-5 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">bug_report</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Detalle de Incidente #ERR-9921</h2>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm font-bold bg-error text-on-error uppercase">Crítico</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agente asignado: SupportBot</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('incidentModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-6 flex flex-col gap-6 max-h-[768px] overflow-y-auto">
+<!-- Metadata Specs Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Timestamp</span>
+<span class="font-label-md text-label-md font-medium text-on-surface mt-0.5">2026-11-20 09:42:15</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Agente</span>
+<span class="font-label-md text-label-md font-medium text-primary mt-0.5">SupportBot</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Módulo</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate mt-0.5" title="runtime/execution_engine.js">runtime/engine.js</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Severidad</span>
+<span class="font-label-md text-label-md font-bold text-error mt-0.5">Crítico</span>
+</div>
+</div>
+<!-- Description Block -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">Descripción del Incidente</span>
+<div class="p-4 rounded-xl bg-surface-container-lowest text-body-md font-body-md text-on-surface shadow-sm">
+            Fallo de respuesta tras 30.000ms al procesar ticket #9921. El agente entró en estado fallando al no recibir señal de heartbeat.
+          </div>
+</div>
+<!-- Fictional Stacktrace Monospace Box -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">terminal</span>
+              Traza Completa de Ejecución
+            </span>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+              Copiar traza
+            </button>
+</div>
+<div class="bg-inverse-surface rounded-xl p-4 text-inverse-on-surface font-label-sm text-label-sm overflow-x-auto shadow-inner">
+<pre class="leading-relaxed"><code><span class="text-tertiary-fixed-dim">[2026-11-20T09:42:15.102Z]</span> <span class="text-error font-bold">ERROR</span> @agenthub/runtime: ExecutionTimeoutException
+  <span class="text-surface-dim">at async AgentExecutor.runTask</span> (<span class="text-secondary-fixed">core/executor.js:142:18</span>)
+  <span class="text-surface-dim">at async SkillRunner.execute</span> (<span class="text-secondary-fixed">skills/support_automation.js:89:12</span>)
+  <span class="text-surface-dim">at async ContextPipeline.dispatch</span> (<span class="text-secondary-fixed">pipeline/dispatcher.js:64:9</span>)
+
+<span class="text-tertiary-fixed font-semibold">Payload ID:</span> req_9a8f23bc | <span class="text-tertiary-fixed font-semibold">Model:</span> gpt-4o-enterprise | <span class="text-error font-semibold">Latency:</span> 30005ms</code></pre>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action Buttons -->
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-end gap-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium hover:bg-surface-container-high transition-colors" onclick="document.getElementById('incidentModal').classList.add('hidden')" type="button">
+          Cerrar
+        </button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-tertiary text-on-tertiary font-body-md text-body-md font-medium hover:opacity-90 transition-opacity shadow-sm" onclick="document.getElementById('incidentModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+          Marcar como resuelto (Local)
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions and toggles
+    document.addEventListener('DOMContentLoaded', () => {
+      const rowBtn = document.getElementById('rowActionBtn1');
+      const menu = document.getElementById('dropdownMenu1');
+      
+      if (rowBtn && menu) {
+        rowBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          menu.classList.toggle('hidden');
+        });
+      }
+
+      // Close modal on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const modal = document.getElementById('incidentModal');
+          if (modal) modal.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</div></main></div></body></html>

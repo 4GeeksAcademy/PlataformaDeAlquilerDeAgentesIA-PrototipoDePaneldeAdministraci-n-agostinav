@@ -512,3 +512,60 @@ Los criterios anteriores cubren los 42 requisitos numerados de la consigna princ
 3. Recorrer con teclado sidebar, dropdown, acordeones y modales.
 4. Comprobar que el foco es visible y que los textos mantienen contraste en ambos temas.
 5. Confirmar que los badges, aunque tengan color, incluyen texto comprensible.
+
+---
+
+# Complemento tecnico AgentHub
+
+Este complemento extiende la especificacion funcional anterior; no la reemplaza ni crea un `spec.md` paralelo. Los criterios 1-53 y sus valores fuente permanecen sin cambios. `SPECS.md`, en la raiz, es la unica especificacion del proyecto y conserva la especificacion funcional aprobada junto con este complemento tecnico.
+
+## 14. Integracion visual de Stitch y DESIGN.MD
+
+Las cinco referencias (`contratacionesdeagentes.html`, `gestiondeagentes.html`, `gestiondeusuarios.html`, `logdeerrores.html` y `skills.html`) contienen el mismo shell AgentHub: sidebar con seis enlaces, header fijo, estado activo y control que alterna la clase `dark`. Tambien repiten tokens de superficie, configuracion Tailwind, tipografia y patrones de KPI, tablas, badges, menus y dialogs. La implementacion consolidara el shell y renderizara seis vistas; Dashboard se construye a partir de `SPECS.md`, porque no hay una referencia HTML separada para el.
+
+Los HTML exportados configuran `darkMode: "class"` y cambian la clase raiz, pero no aplican clases `dark:` a las superficies de sus pantallas. Para que el toggle tenga efecto visual real, todas las superficies, textos, bordes, badges, menus y dialogos recibiran variantes claras/oscuras segun `DESIGN.MD`. El tema inicial sera claro y no se guardara entre recargas.
+
+Se conserva la composicion, jerarquia, densidad y lenguaje visual reconocible de Stitch, usando tokens y utilidades Tailwind. No se copiaran bloques CSS `<style>`, atributos `style`, mutaciones visuales con `element.style`, manejadores `onclick`, configuraciones duplicadas ni recursos remotos de Google Fonts/Material Symbols: no cumplen las restricciones de CSS/estilos inline y ausencia de servicios externos. La funcionalidad se implementara con listeners vanilla; los iconos tendran alternativa local accesible. Los menus/modal inician cerrados y los acordeones colapsados aunque la referencia los muestre abiertos.
+
+### Diferencias encontradas en las referencias
+
+- Contrataciones presenta `$48.750` como KPI mientras los cuatro segmentos rotulados suman `$48.700`; no se reutilizara ese grafico como calculo de contratos. Cada total de contrato se obtiene de sus propios precios de skills.
+- El catalogo de Skills muestra precios mensuales que no son iguales a algunos precios unitarios de contratos. `SPECS.md` exige sumar los precios del contrato, no igualarlos a una tarifa global del catalogo.
+- Agentes muestra cinco agentes: tres activos, uno inactivo y uno fallando. Esta distribucion es un fixture compatible; el Dashboard debe derivar los conteos desde los agentes existentes y visibles.
+- Usuarios y errores tienen controles de demo incompletos; errores presenta texto “Live Stream” y accion de resolver que no cambia la fila. La implementacion usara datos ficticios y mutaciones locales, sin afirmar conexion o actividad real.
+- `DESIGN.MD` documenta paletas/tokens con `primary: #3525cd` y `primary-container: #4f46e5`, mientras su narrativa llama a `#4f46e5` ancla primaria. Se conserva el mapeo de tokens Stitch y no se redefine la identidad cromatica.
+
+## 15. Contratos de componentes
+
+### Modal singleton
+
+Una unica estructura de dialogo y backdrop recibe un tipo de vista, un ID de entidad y el elemento disparador. El contenido define titulo, cuerpo y acciones para: detalle de usuario, configuracion de prompt, detalle de skill, detalle de contrato y detalle de error. Cierre por boton, clic directo en backdrop y Escape; el panel evita que un clic interno cierre el dialogo. Al abrir, el foco entra al control util inicial; al cerrar vuelve al disparador. Configurar agente mantiene un borrador hasta Guardar; Cancelar descarta el borrador.
+
+### Controlador unico de dropdowns
+
+Los botones de tres puntos informan tipo/ID de entidad. Un controlador cierra el menu anterior y muestra las acciones aplicables: usuarios (detalle/eliminar), agentes (configurar/eliminar), skills (detalle/eliminar), contratos (detalle) y errores (detalle/resolver). Clic exterior cierra; Escape cierra y devuelve el foco. La seleccion ejecuta la accion local y cierra el menu.
+
+### Componentes compartidos
+
+- **Badge:** estado/severidad traducidos a texto visible y clases semanticas con contraste en ambos temas.
+- **Sidebar y header:** una sola instancia persistente para las seis vistas; navegacion cambia seccion, titulo y `aria-current`.
+- **Toggle de tema:** un control global modifica la clase `dark` del elemento raiz y no usa almacenamiento persistente.
+- **Lista colapsable:** un patron por agente con estado independiente, `aria-expanded`, `aria-controls`, teclado y transicion Tailwind; estado inicial cerrado.
+- **Tablas, tarjetas KPI y acciones:** patrones de marcado/estilos compartidos; las tablas usan contenedor `overflow-x-auto` donde lo requiera el viewport.
+
+## 16. Reglas tecnicas y de datos
+
+- Entrega de producto: solo `index.html`; HTML5 semantico, Tailwind CSS CDN y JavaScript vanilla. Sin CSS personalizado, atributos `style`, frameworks, librerias, APIs, red, almacenamiento o build.
+- Ingresos del Dashboard: valor ficticio fijo `$48.750`. Perdidas por descuentos/cupones: `$3.240`. No se deducen de los contratos.
+- Conteos de agentes activos/fallando: derivados del inventario vigente, nunca de valores escritos por separado. La distribucion Stitch de 3 activos, 1 inactivo y 1 fallando es compatible y, si se conserva, produce 3 y 1 en Dashboard.
+- Mantener los cinco usuarios indicados, el catalogo de agentes/skills de `SPECS.md`, al menos cuatro contratos y seis errores. Los IDs referenciados deben existir y los conteos de skills derivarse de las asignaciones.
+- Los importes se expresan en una unica moneda (USD es la opcion alineada a Stitch). No fijar un precio de contrato a partir de un KPI: cada total se calcula como suma de sus lineas de skills y el modal muestra esos mismos importes.
+- Eliminar es una mutacion solo visual/local hasta recargar. Se pueden conservar entidades base ocultas para no romper referencias historicas; las relaciones activas mostradas se actualizan. Al eliminar agente, los conteos operativos se recalculan. Al eliminar skill, se oculta del catalogo y de nuevas asociaciones, manteniendo desglose historico de contratos.
+- “Marcar como resuelto” actualiza el registro de error local y no modifica por si solo el estado del agente. Guardar prompt cambia el valor en memoria de sesion; Cancelar no lo cambia.
+- Errores y contratos mantienen nombres/IDs validos durante la sesion. No mostrar mensajes de sincronizacion, persistencia remota ni actividad en tiempo real.
+
+## 17. Trazabilidad de aceptacion
+
+La lista normativa es la de los criterios 1-53 inmediatamente anteriores. En `tasks.md` se asigna cobertura asi: 1-8 producto y restricciones; 9-12 Dashboard; 13-18 Usuarios; 19-26 Agentes; 27-32 Skills; 33-38 Contrataciones; 39-42 Errores; 43-53 integracion global, accesibilidad, responsive y reinicio local. No se omite ni altera ningun criterio.
+
+El criterio 1 menciona que no habia HTML antes del primer commit de especificaciones, pero el repositorio contiene cinco referencias Stitch que deben preservarse. Se interpreta como una sola pagina HTML de producto (`index.html`) y las referencias como material de diseño, no como paginas de producto. Una lectura literal de “ningun HTML” seria incompatible con ese estado y requiere resolucion antes de implementacion.

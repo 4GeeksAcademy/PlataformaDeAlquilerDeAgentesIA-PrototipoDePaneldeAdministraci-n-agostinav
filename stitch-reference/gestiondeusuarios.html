@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","inverse-primary":"#c3c0ff","surface-container-highest":"#d3e4fe","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","primary-container":"#4f46e5","primary-fixed":"#e2dfff","on-tertiary-fixed-variant":"#004e5c","surface-bright":"#f8f9ff","tertiary-fixed-dim":"#4cd7f6","on-tertiary":"#ffffff","on-secondary-fixed":"#25005a","error":"#ba1a1a","surface":"#f8f9ff","outline":"#777587","on-background":"#0b1c30","tertiary-fixed":"#acedff","on-tertiary-container":"#93e8ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","secondary-container":"#8a4cfc","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container":"#e5eeff","background":"#f8f9ff","surface-tint":"#4d44e3","on-error":"#ffffff","tertiary-container":"#006a7c","on-primary-container":"#dad7ff","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","tertiary":"#00505f","secondary-fixed-dim":"#d2bbff","primary":"#3525cd","on-surface-variant":"#464555","on-secondary-container":"#fffbff","on-surface":"#0b1c30","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-primary-fixed-variant":"#3323cc","secondary":"#712ae2","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-fixed":"#eaddff","on-secondary-fixed-variant":"#5a00c6","primary-fixed-dim":"#c3c0ff","on-tertiary-fixed":"#001f26"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1.5rem","margin-sm":"1rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight tracking-tight">AgentHub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">ADMIN SAAS</span></div></div><span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm font-semibold bg-surface-container-high text-primary">Demo Local</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 transition-colors bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Usuarios</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agentes" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md text-body-md">Agentes</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">extension</span><span class="font-body-md text-body-md">Skills</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contrataciones" href="#"><span class="material-symbols-outlined text-[20px]">handshake</span><span class="font-body-md text-body-md">Contrataciones</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="log-de-errores" href="#"><span class="material-symbols-outlined text-[20px]">bug_report</span><span class="font-body-md text-body-md">Log de errores</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low flex items-center gap-3 shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Admin Operativo</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">admin@agenthub.io</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide uppercase">Panel de Control y Orquestación</span></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" title="Alternar Tema" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-gutter bg-surface flex-1"><div class="flex flex-col w-full pb-margin">
+<!-- Sub-Header Contextual & Metrics Ribbon -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg pt-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Módulo Administrativo</span>
+<span class="text-outline-variant font-label-sm">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">SaaS Control</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Gestión de usuarios</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Administración de clientes registrados, asignación de planes y estado de cuentas en el ecosistema.</p>
+</div>
+<!-- Quick Stats Mini Strip -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl shadow-sm">
+<div class="flex flex-col pr-space-md border-r border-surface-container-high">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Clientes</span>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Registrados</span>
+</div>
+</div>
+<div class="flex flex-col pl-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Actividad Global</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">98.4% Salud</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Control & Filter Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Left: Search and Plan Segmented Filter -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md flex-1">
+<!-- Search Input -->
+<div class="relative min-w-[280px] max-w-md w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-4 py-2 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="user-search-input" placeholder="Buscar por nombre o email..." type="text"/>
+</div>
+<!-- Plan Filter Pill Selector -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg self-start sm:self-auto overflow-x-auto">
+<button class="plan-filter-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold transition-all bg-surface-container-lowest text-primary shadow-sm" data-filter="all" type="button">
+          Todos
+        </button>
+<button class="plan-filter-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-filter="Enterprise" type="button">
+          Enterprise
+        </button>
+<button class="plan-filter-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-filter="Pro" type="button">
+          Pro
+        </button>
+<button class="plan-filter-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all" data-filter="Starter" type="button">
+          Starter
+        </button>
+</div>
+</div>
+<!-- Right: Add User Action -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-semibold transition-all shadow-sm active:scale-[0.99]" id="btn-create-user-demo" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Nuevo usuario</span>
+<span class="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-on-primary-fixed/20 text-on-primary">Demo</span>
+</button>
+</div>
+</div>
+<!-- Main Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-visible relative">
+<div class="overflow-x-auto min-h-[380px]">
+<table class="w-full text-left border-collapse" id="users-table">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 pl-6 pr-4" scope="col">Nombre y Empresa</th>
+<th class="py-3.5 px-4" scope="col">Email</th>
+<th class="py-3.5 px-4" scope="col">Plan</th>
+<th class="py-3.5 px-4" scope="col">Fecha de registro</th>
+<th class="py-3.5 px-4" scope="col">Estado</th>
+<th class="py-3.5 pl-4 pr-6 text-right" scope="col">Acciones</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0">
+<!-- Row 1: Sofía Ramírez (Con Dropdown Activo) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 pl-6 pr-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+                  SR
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Sofía Ramírez</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">TechCorp Solutions</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              sofia.ramirez@techcorp.io
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-label-sm font-semibold bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+                Enterprise
+              </span>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              2026-01-14
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100/80 text-emerald-800">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
+                activo
+              </span>
+</td>
+<td class="py-4 pl-4 pr-6 text-right relative">
+<button class="w-8 h-8 inline-flex items-center justify-center rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('dropdown-sofia').classList.toggle('hidden')" title="Opciones de fila" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<!-- Dropdown desplegado visible por defecto según especificación -->
+<div class="absolute right-6 top-12 z-30 w-44 bg-surface-container-lowest rounded-xl shadow-xl p-1.5 flex flex-col text-left" id="dropdown-sofia">
+<button class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm font-medium w-full text-left" id="trigger-open-modal" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+<span>Ver detalle</span>
+</button>
+<button class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-error hover:bg-error-container/40 transition-colors font-body-sm text-body-sm font-medium w-full text-left" onclick="alert('Acción Demo: Eliminar usuario no destructivo')" type="button">
+<span class="material-symbols-outlined text-[18px] text-error">delete</span>
+<span>Eliminar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Daniel Ortega -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 pl-6 pr-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+                  DO
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Daniel Ortega</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Innovate Labs</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              daniel.ortega@innovatelabs.com
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+                Pro
+              </span>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              2026-02-03
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100/80 text-emerald-800">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
+                activo
+              </span>
+</td>
+<td class="py-4 pl-4 pr-6 text-right">
+<button class="w-8 h-8 inline-flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Martina Torres -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 pl-6 pr-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+                  MT
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Martina Torres</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Global Logistics</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              martina.torres@globallogistics.ar
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-label-sm font-semibold bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+                Enterprise
+              </span>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              2026-02-18
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100/80 text-emerald-800">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-600"></span>
+                activo
+              </span>
+</td>
+<td class="py-4 pl-4 pr-6 text-right">
+<button class="w-8 h-8 inline-flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Nicolás Vega -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 pl-6 pr-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+                  NV
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Nicolás Vega</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">FinTech Prime</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              nicolas.vega@fintechprime.co
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-label-sm font-semibold bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+                Starter
+              </span>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              2026-03-01
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-900">
+<span class="h-1.5 w-1.5 rounded-full bg-amber-600"></span>
+                pendiente
+              </span>
+</td>
+<td class="py-4 pl-4 pr-6 text-right">
+<button class="w-8 h-8 inline-flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Lucía Fernández -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 pl-6 pr-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm font-bold flex items-center justify-center shrink-0">
+                  LF
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Lucía Fernández</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Nexus Retail</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              lucia.fernandez@nexusretail.com
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+                Pro
+              </span>
+</td>
+<td class="py-4 px-4 font-label-md text-label-md text-on-surface-variant">
+              2026-03-11
+            </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-error-container text-on-error-container">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+                inactivo
+              </span>
+</td>
+<td class="py-4 pl-4 pr-6 text-right">
+<button class="w-8 h-8 inline-flex items-center justify-center rounded-lg hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Notice -->
+<div class="px-6 py-3 bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant rounded-b-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">dns</span>
+<span>Mostrando 5 de 5 usuarios registrados (Almacenamiento Local Mock)</span>
+</div>
+<div class="flex items-center gap-1 font-mono text-[11px]">
+<span>REGISTRO: AGENTHUB-SAAS-V2.4</span>
+</div>
+</div>
+</div>
+<!-- Modal Component (Visible Como Referencia Arquitectónica Central) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-opacity" id="user-detail-modal">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-2xl w-full overflow-hidden flex flex-col transform transition-all animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Detalle de Usuario - Sofía Ramírez</h3>
+<span class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded bg-surface-container-highest text-primary font-mono">#USR-101</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ficha técnica del operador de cuenta y servicios contratados</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="btn-close-modal" title="Cerrar modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-lg max-h-[768px] overflow-y-auto">
+<!-- Primary Information Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Empresa</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface mt-1 truncate">TechCorp Solutions</span>
+<span class="font-label-sm text-label-sm text-primary mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">domain</span> Tenant Primario
+            </span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Correo Electrónico</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface mt-1 truncate" title="sofia.ramirez@techcorp.io">sofia.ramirez@techcorp.io</span>
+<span class="font-label-sm text-label-sm text-emerald-600 mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> Verificado
+            </span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Plan Suscrito</span>
+<div class="mt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-label-sm font-bold bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[13px]">diamond</span> Enterprise Tier
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-auto pt-2">Facturación Anual</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Estado de Cuenta</span>
+<div class="mt-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                Activo
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-auto pt-2">Sin bloqueos de API</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Fecha de Registro</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface mt-1">14 de enero de 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-auto pt-2 font-mono">10:42 UTC</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Teléfono de Contacto</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface mt-1 font-mono">+54 9 11 4829-1029</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">call</span> Directo Directivo
+            </span>
+</div>
+</div>
+<!-- Associated Active Contracts Block -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-on-surface-variant">
+              Contratos Activos Asociados (2)
+            </span>
+<span class="font-label-sm text-label-sm text-primary font-medium">SLAs vigentes</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Contract Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-bold text-on-surface">CustomerAgent</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Atención N1 Automatizada</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-label-sm font-semibold bg-emerald-100 text-emerald-800">
+                  En ejecución
+                </span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Invocaciones: <strong class="text-on-surface">14,290 / mes</strong></span>
+<span class="font-mono text-primary">v2.1.0</span>
+</div>
+</div>
+<!-- Contract Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">insights</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-bold text-on-surface">DataAnalyst</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pipelines Predictivos</span>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-label-sm font-semibold bg-emerald-100 text-emerald-800">
+                  En ejecución
+                </span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Invocaciones: <strong class="text-on-surface">8,540 / mes</strong></span>
+<span class="font-mono text-secondary">v1.8.4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ÚLTIMO ACCESO: HOY, 14:12</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-medium text-on-surface bg-surface-container-highest hover:bg-surface-container-high transition-colors" id="btn-footer-close-modal" type="button">
+            Cerrar
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md font-semibold text-on-primary bg-primary hover:bg-primary-container transition-colors shadow-sm inline-flex items-center gap-1.5" onclick="alert('Acción Demo: Edición de perfil simulada')" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+            Editar usuario (Local)
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initUserManager() {
+    const modal = document.getElementById('user-detail-modal');
+    const btnClose = document.getElementById('btn-close-modal');
+    const btnFooterClose = document.getElementById('btn-footer-close-modal');
+    const btnTrigger = document.getElementById('trigger-open-modal');
+    const searchInput = document.getElementById('user-search-input');
+    const tableRows = document.querySelectorAll('#users-table tbody tr');
+    const filterButtons = document.querySelectorAll('.plan-filter-btn');
+
+    // Manejo de Modal
+    const closeModal = () => modal.classList.add('hidden');
+    const openModal = () => modal.classList.remove('hidden');
+
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+    if (btnFooterClose) btnFooterClose.addEventListener('click', closeModal);
+    if (btnTrigger) btnTrigger.addEventListener('click', openModal);
+
+    // Cierre al pulsar fondo oscuro del modal
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // Filtro por Plan
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+          b.classList.add('text-on-surface-variant', 'font-medium');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+        btn.classList.remove('text-on-surface-variant', 'font-medium');
+
+        const selectedPlan = btn.getAttribute('data-filter');
+
+        tableRows.forEach(row => {
+          if (selectedPlan === 'all') {
+            row.style.display = '';
+          } else {
+            const planText = row.children[2]?.textContent || '';
+            row.style.display = planText.toLowerCase().includes(selectedPlan.toLowerCase()) ? '' : 'none';
+          }
+        });
+      });
+    });
+
+    // Buscador interactivo
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        tableRows.forEach(row => {
+          const nameEnterprise = row.children[0]?.textContent.toLowerCase() || '';
+          const email = row.children[1]?.textContent.toLowerCase() || '';
+          if (nameEnterprise.includes(query) || email.includes(query)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Botón de nuevo usuario feedback
+    const btnNewUser = document.getElementById('btn-create-user-demo');
+    if (btnNewUser) {
+      btnNewUser.addEventListener('click', () => {
+        alert('AgentHub Demo: Formulario de alta rápida disponible en modo orquestador completo.');
+      });
+    }
+  })();
+</script></main></div></body></html>

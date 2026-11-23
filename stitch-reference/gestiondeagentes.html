@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","inverse-primary":"#c3c0ff","surface-container-highest":"#d3e4fe","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","primary-container":"#4f46e5","primary-fixed":"#e2dfff","on-tertiary-fixed-variant":"#004e5c","surface-bright":"#f8f9ff","tertiary-fixed-dim":"#4cd7f6","on-tertiary":"#ffffff","on-secondary-fixed":"#25005a","error":"#ba1a1a","surface":"#f8f9ff","outline":"#777587","on-background":"#0b1c30","tertiary-fixed":"#acedff","on-tertiary-container":"#93e8ff","on-primary":"#ffffff","surface-dim":"#cbdbf5","secondary-container":"#8a4cfc","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container":"#e5eeff","background":"#f8f9ff","surface-tint":"#4d44e3","on-error":"#ffffff","tertiary-container":"#006a7c","on-primary-container":"#dad7ff","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","tertiary":"#00505f","secondary-fixed-dim":"#d2bbff","primary":"#3525cd","on-surface-variant":"#464555","on-secondary-container":"#fffbff","on-surface":"#0b1c30","inverse-surface":"#213145","surface-variant":"#d3e4fe","on-primary-fixed-variant":"#3323cc","secondary":"#712ae2","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-fixed":"#eaddff","on-secondary-fixed-variant":"#5a00c6","primary-fixed-dim":"#c3c0ff","on-tertiary-fixed":"#001f26"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter-sm":"1rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1.5rem","margin-sm":"1rem","margin":"2rem","space-lg":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"label-md":["JetBrains Mono"],"headline-lg":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight tracking-tight">AgentHub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">ADMIN SAAS</span></div></div><span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-label-sm font-semibold bg-surface-container-high text-primary">Demo Local</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="usuarios" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Usuarios</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 transition-colors bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="agentes" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span class="font-body-md text-body-md">Agentes</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">extension</span><span class="font-body-md text-body-md">Skills</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="contrataciones" href="#"><span class="material-symbols-outlined text-[20px]">handshake</span><span class="font-body-md text-body-md">Contrataciones</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="log-de-errores" href="#"><span class="material-symbols-outlined text-[20px]">bug_report</span><span class="font-body-md text-body-md">Log de errores</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low flex items-center gap-3 shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Admin Operativo</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">admin@agenthub.io</span></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide uppercase">Panel de Control y Orquestación</span></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" title="Alternar Tema" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 px-gutter bg-surface flex-1"><div class="flex flex-col w-full pb-margin">
+<!-- Top Command & Metrics Bar -->
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<!-- Header Contextual Block -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+<span>Orquestación de Modelos</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Gestión de agentes</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+          Supervisión de agentes IA, estado operativo, skills equipadas y prompts de sistema.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sincronizar</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="openCreateModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Crear Agente</span>
+</button>
+</div>
+</div>
+<!-- Metric Badges Array (KPI Strip) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex items-center gap-3 p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Agentes</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Activos en Ejecución</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Inactivo en Reposo</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-error">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fallando / Revisión</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Agent Workspace Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg relative">
+<!-- CARD 1: CustomerAgent (Expanded accordion + active dropdown demo) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative transition-all">
+<div class="flex flex-col">
+<!-- Card Header -->
+<div class="flex items-start justify-between relative mb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-primary-container/10 text-primary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">CustomerAgent</h2>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Propietario:</span>
+<span class="text-on-surface font-medium truncate">AgentHub Core</span>
+</div>
+</div>
+</div>
+<!-- Dropdown Trigger + Open Dropdown Menu -->
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="btn-menu-customer" onclick="toggleDropdown('dropdown-customer')" title="Opciones" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<!-- Expanded Dropdown Menu -->
+<div class="absolute right-0 top-10 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5 flex flex-col" id="dropdown-customer">
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openPromptModal('CustomerAgent')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Configurar prompt</span>
+</button>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openSkillModal('CustomerAgent')" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">add_circle</span>
+<span>Equipar skills</span>
+</button>
+<div class="h-[1px] bg-surface-container-high my-1"></div>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm w-full" onclick="triggerDeleteAgent('CustomerAgent')" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Eliminar agente</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Status Chip & Latency info -->
+<div class="flex items-center justify-between my-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-tertiary">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>activo</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> 240ms avg
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+          Resolución automática de tickets L1/L2, sincronización con CRM corporativo y derivación por SLA.
+        </p>
+<!-- Accordion EXPANDED: Skills Equipadas -->
+<div class="rounded-xl bg-surface-container-low p-space-md mt-space-xs">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">extension</span>
+<span>Skills equipadas (3)</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface flex items-center text-[12px] font-label-sm" onclick="toggleAccordion('skills-customer', this)" type="button">
+<span class="material-symbols-outlined text-[18px] transform rotate-180 transition-transform">expand_more</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 pt-1" id="skills-customer">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]">database</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Consultas CRM</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v2.4</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Respuestas multicanal</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v1.9</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[14px]">rule</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Automatización de soporte</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v3.0</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors shadow-sm" onclick="openPromptModal('CustomerAgent')" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Configurar Prompt</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: ag-core-01</span>
+</div>
+</div>
+<!-- CARD 2: SalesCopilot (Skills collapsed) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all">
+<div class="flex flex-col">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-secondary-fixed/50 text-secondary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">SalesCopilot</h2>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Propietario:</span>
+<span class="text-on-surface font-medium truncate">Sales Operations</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="toggleDropdown('dropdown-sales')" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5 flex flex-col" id="dropdown-sales">
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openPromptModal('SalesCopilot')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Configurar prompt</span>
+</button>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm w-full" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Eliminar agente</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between my-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-tertiary">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>activo</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> 190ms avg
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+          Calificación automática de prospectos B2B y enriquecimiento de pipeline comercial en tiempo real.
+        </p>
+<!-- Accordion Collapsed -->
+<div class="rounded-xl bg-surface-container-low p-space-md mt-space-xs">
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('skills-sales', this)" type="button">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">extension</span>
+<span>Ver skills asignadas (2)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-2 pt-3" id="skills-sales">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]">database</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Consultas CRM</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v2.4</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[14px]">analytics</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Análisis de datos</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v1.2</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="openPromptModal('SalesCopilot')" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Configurar Prompt</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: ag-sales-04</span>
+</div>
+</div>
+<!-- CARD 3: DataAnalyst (Skills collapsed) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all">
+<div class="flex flex-col">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-tertiary-fixed/60 text-tertiary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">query_stats</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">DataAnalyst</h2>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Propietario:</span>
+<span class="text-on-surface font-medium truncate">Analytics Dept</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="toggleDropdown('dropdown-data')" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5 flex flex-col" id="dropdown-data">
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openPromptModal('DataAnalyst')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Configurar prompt</span>
+</button>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm w-full" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Eliminar agente</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between my-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-low text-tertiary">
+<span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>activo</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> 410ms avg
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+          Consultas SQL autónomas, generación de análisis comparativo y correlación semanal de KPIs.
+        </p>
+<!-- Accordion Collapsed -->
+<div class="rounded-xl bg-surface-container-low p-space-md mt-space-xs">
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('skills-data', this)" type="button">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">extension</span>
+<span>Ver skills asignadas (2)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-2 pt-3" id="skills-data">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Análisis de datos</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v3.1</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[14px]">description</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Generación de reportes</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v2.0</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="openPromptModal('DataAnalyst')" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Configurar Prompt</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: ag-data-09</span>
+</div>
+</div>
+<!-- CARD 4: SupportBot (FAILING STATE) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between transition-all">
+<div class="flex flex-col">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-error-container/40 text-error flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">SupportBot</h2>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Propietario:</span>
+<span class="text-on-surface font-medium truncate">Customer Care</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="toggleDropdown('dropdown-support')" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5 flex flex-col" id="dropdown-support">
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openPromptModal('SupportBot')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Configurar prompt</span>
+</button>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm w-full" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Eliminar agente</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between my-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-error">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span>fallando</span>
+</span>
+<span class="font-label-sm text-label-sm text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer_off</span> Timeout 504
+          </span>
+</div>
+<div class="p-2.5 rounded-lg bg-error-container/20 text-on-surface-variant mb-space-md">
+<p class="font-body-sm text-body-sm text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">report_problem</span>
+            Requiere revisión de prompt o timeout en ejecución
+          </p>
+</div>
+<!-- Accordion Collapsed -->
+<div class="rounded-xl bg-surface-container-low p-space-md mt-space-xs">
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('skills-support', this)" type="button">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">extension</span>
+<span>Ver skills asignadas (1)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-2 pt-3" id="skills-support">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]">rule</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Automatización de soporte</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v1.8</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error hover:bg-error/90 font-label-md text-label-md transition-colors shadow-sm" onclick="openPromptModal('SupportBot')" type="button">
+<span class="material-symbols-outlined text-[16px]">build</span>
+<span>Inspeccionar Error</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: ag-sup-02</span>
+</div>
+</div>
+<!-- CARD 5: HealthAgent (INACTIVE STATE) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between opacity-85 hover:opacity-100 transition-all">
+<div class="flex flex-col">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">monitor_heart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">HealthAgent</h2>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Propietario:</span>
+<span class="text-on-surface font-medium truncate">Infrastructure</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="toggleDropdown('dropdown-health')" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5 flex flex-col" id="dropdown-health">
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm w-full" onclick="openPromptModal('HealthAgent')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+<span>Configurar prompt</span>
+</button>
+<button class="flex items-center gap-2.5 px-3.5 py-2 text-left text-error hover:bg-error-container/20 transition-colors font-body-sm text-body-sm w-full" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Eliminar agente</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between my-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">
+<span class="h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+<span>inactivo</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pause_circle</span> En pausa
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+          Telemetría de microservicios, chequeos de salud de endpoints y notificaciones a PagerDuty.
+        </p>
+<!-- Accordion Collapsed -->
+<div class="rounded-xl bg-surface-container-low p-space-md mt-space-xs">
+<button class="w-full flex items-center justify-between text-on-surface hover:text-primary transition-colors" onclick="toggleAccordion('skills-health', this)" type="button">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">extension</span>
+<span>Ver skills asignadas (1)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-2 pt-3" id="skills-health">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[14px]">description</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Generación de reportes</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">v1.0</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="openPromptModal('HealthAgent')" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Reanudar Agente</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ID: ag-inf-08</span>
+</div>
+</div>
+</div>
+<!-- MODAL: Configurar Prompt Agente (Rendered as Interactive Overlay per SPECS) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-opacity" id="promptModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-2xl w-full overflow-hidden flex flex-col transform transition-all">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalAgentTitle">Configuración de System Prompt: CustomerAgent</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Modifique las directivas iniciales del agente IA en memoria local de sesión</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="closePromptModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Model & Token Info Strip -->
+<div class="flex items-center justify-between px-space-md py-2 rounded-lg bg-surface-container-low font-label-sm text-label-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">memory</span>
+<span>Modelo Base: <strong>Claude 3.5 Sonnet (Direct API)</strong></span>
+</div>
+<span class="text-tertiary font-medium">Temperatura: 0.2 | Top-P: 0.95</span>
+</div>
+<!-- Prompt Textarea -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="agentPromptInput">
+<span>System Prompt Directives</span>
+<span class="text-primary font-normal">(Markdown soportado)</span>
+</label>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-1" onclick="resetToDefaultPrompt()" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span> Restaurar original
+            </button>
+</div>
+<textarea class="w-full rounded-lg bg-surface-container-low text-on-surface p-3.5 font-label-sm text-label-sm leading-relaxed focus:bg-surface-container-lowest outline-none shadow-sm transition-all resize-y" id="agentPromptInput" oninput="updateCharCount(this)" rows="7">Eres CustomerAgent, el asistente oficial de atención al cliente de AgentHub. Tu rol principal es procesar solicitudes de clientes, consultar el CRM empresarial y resolver tickets de nivel 1 y 2 con tono formal, empático y resolutivo. Respeta las políticas de privacidad y escala a agentes humanos ante reclamos críticos.</textarea>
+</div>
+<!-- Session Memory Notice / Counter -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg bg-surface-container-high/60">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Los cambios se conservan en memoria de sesión JavaScript (sin persistencia en servidor según SPECS.md).
+            </span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary shrink-0 self-end sm:self-center" id="charCounter">
+            Estado: 354 caracteres
+          </span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors shadow-sm" onclick="closePromptModal()" type="button">
+          Cancelar
+        </button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="saveAgentPrompt()" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar Prompt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Prompt actualizado en memoria de sesión</span>
+</div>
+</div>
+</div>
+<script>
+  // In-Memory Storage for Session Prompts (per SPECS.md)
+  const agentPromptsSession = {
+    'CustomerAgent': 'Eres CustomerAgent, el asistente oficial de atención al cliente de AgentHub. Tu rol principal es procesar solicitudes de clientes, consultar el CRM empresarial y resolver tickets de nivel 1 y 2 con tono formal, empático y resolutivo. Respeta las políticas de privacidad y escala a agentes humanos ante reclamos críticos.',
+    'SalesCopilot': 'Eres SalesCopilot. Tu función es clasificar leads, validar perfiles ICP y redactar propuestas de valor personalizadas para ejecutivos B2B.',
+    'DataAnalyst': 'Eres DataAnalyst. Tu función es estructurar queries analíticas, detectar anomalías operativas y generar sintaxis estadística rigurosa.',
+    'SupportBot': 'Eres SupportBot. Procesa eventos de monitoreo y alerta a DevOps en caso de latencias superiores al SLA fijado.',
+    'HealthAgent': 'Eres HealthAgent. Ejecuta sondas activas en la infraestructura y reporta métricas de disponibilidad continua.'
+  };
+
+  let currentActiveAgent = 'CustomerAgent';
+
+  function toggleDropdown(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.classList.toggle('hidden');
+  }
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', function(event) {
+    if (!event.target.closest('button[onclick^="toggleDropdown"]') && !event.target.closest('[id^="dropdown-"]')) {
+      document.querySelectorAll('[id^="dropdown-"]').forEach(drop => {
+        if (drop.id !== 'dropdown-customer') {
+          drop.classList.add('hidden');
+        }
+      });
+    }
+  });
+
+  function toggleAccordion(id, btn) {
+    const content = document.getElementById(id);
+    if (!content) return;
+    content.classList.toggle('hidden');
+    
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      if (content.classList.contains('hidden')) {
+        icon.classList.remove('rotate-180');
+      } else {
+        icon.classList.add('rotate-180');
+      }
+    }
+  }
+
+  function openPromptModal(agentName) {
+    currentActiveAgent = agentName;
+    const title = document.getElementById('modalAgentTitle');
+    const textarea = document.getElementById('agentPromptInput');
+    const modal = document.getElementById('promptModal');
+
+    if (title) title.innerText = `Configuración de System Prompt: ${agentName}`;
+    if (textarea) {
+      textarea.value = agentPromptsSession[agentName] || agentPromptsSession['CustomerAgent'];
+      updateCharCount(textarea);
+    }
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closePromptModal() {
+    const modal = document.getElementById('promptModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function updateCharCount(textarea) {
+    const counter = document.getElementById('charCounter');
+    if (counter) {
+      counter.innerText = `Estado: ${textarea.value.length} caracteres`;
+    }
+  }
+
+  function resetToDefaultPrompt() {
+    const textarea = document.getElementById('agentPromptInput');
+    if (textarea) {
+      textarea.value = agentPromptsSession['CustomerAgent'];
+      updateCharCount(textarea);
+    }
+  }
+
+  function saveAgentPrompt() {
+    const textarea = document.getElementById('agentPromptInput');
+    if (textarea) {
+      agentPromptsSession[currentActiveAgent] = textarea.value;
+    }
+    closePromptModal();
+    showToast(`System Prompt para ${currentActiveAgent} guardado en memoria local.`);
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    if (!toast) return;
+    
+    if (toastMsg) toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function triggerDeleteAgent(name) {
+    if (confirm(`¿Confirma eliminar el agente ${name}? Esta acción invalidará los flujos asociados en la sesión.`)) {
+      showToast(`Agente ${name} removido de la memoria.`);
+    }
+  }
+
+  function openCreateModal() {
+    showToast('Iniciando asistente de aprovisionamiento de nuevo agente...');
+  }
+
+  function openSkillModal(agent) {
+    showToast(`Abriendo catálogo de skills compatibles para ${agent}`);
+  }
+</script></main></div></body></html>
